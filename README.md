@@ -6,7 +6,7 @@ This project is a MATLAB-based simulation of a digital communication system usin
 
 The simulation is implemented entirely in MATLAB (Live Script) and visualizes BER (Bit Error Rate) performance over 5000 trials for multiple coding configurations.
 
-▶️ The project hence primararily emphasises on algorithm design, implementation accuracy, and result visualization.
+▶️ The project hence primarily emphasizes algorithm design, implementation accuracy, and result visualization.
 
 ---
 
