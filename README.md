@@ -92,6 +92,27 @@ At Eb/N₀ = 6 dB:
 - r = 1/3, K = 6 → BER (Soft) ≈ 10⁻⁵
 
 Soft decision decoding shows a 2–3 dB performance gain over hard decoding.
+---
+## 📊 Analysis
+
+The simulation results clearly demonstrate the advantages of convolutional coding and soft decision decoding in noisy environments:
+
+- Bit Error Rate (BER) drops significantly with increasing Eb/N₀ for all configurations, validating theoretical expectations.
+- Soft Decision Decoding (SDD) consistently outperformed Hard Decision Decoding (HDD), showing a performance improvement of approximately 2–3 dB for the same BER.
+- Among the configurations tested:
+  - (r = 1/2, K = 3): Provided moderate error correction.
+  - (r = 1/3, K = 4): Showed better BER with increased redundancy.
+  - (r = 1/3, K = 6): Achieved the best performance, with BER dropping to 10⁻⁵ at Eb/N₀ = 6 dB using SDD.
+- The waterfall behavior in BER curves highlights the threshold effect—where a slight increase in Eb/N₀ yields steep improvements in decoding reliability.
+- The output plots from MATLAB (see Simulations.pdf) corroborate the expected performance trends from classical communication theory.
+
+📈 Example BER Performance Plot:
+![BER vs Eb/N0](https://drive.google.com/file/d/1ylR9D3k_8-qFJyPjZAENq0WK2uMAxJgS/view?usp=sharing)
+
+These observations confirm that:
+- Lower code rates (i.e., more redundancy) and longer constraint lengths lead to superior error correction.
+- Soft decision decoding is more computationally intensive but significantly more effective in reducing errors.
+
 
 ---
 
